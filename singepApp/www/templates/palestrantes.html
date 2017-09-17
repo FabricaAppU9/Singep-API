@@ -1,0 +1,39 @@
+<ion-view view-title="Palestrantes">
+    
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+  </ion-nav-bar>
+
+
+    <ion-content>
+ 	<div class="list list-inset">
+	   <div class="itemArtigo itemPalestrante" ng-repeat="palestrante in listaPalestrantes">
+        <a class="btn " href="#/app/detalhepalestrante/{{palestrante.codigo_palestrante}}"><div id="body" class="container div-lista-artigo secondary">
+            <div class="div-artigo row">
+                <div class="col-sm-offset-3 col-sm-9 maincontent div-resume">
+                    
+                    <div class=""> 
+                        <div class="imgpalestrantewrapper">
+                        	<img src="http://singep.esy.es/api/fotos/{{palestrante.foto}}"/>
+                        </div>
+                       <div class="info-palestrante"> 
+	                        <div class="palestrantenome .item">
+	                        	<strong>{{palestrante.nome}}</strong>
+	                        </div>
+	                        <div class="palestrantefiliacao" >
+	                        	{{palestrante.filiacao}}
+	                        </div>
+                        </div>
+
+                    </div> 
+                    
+            </div>
+        </div>
+    </div></a>
+    </div>
+    </ion-nav-view>
+    </ion-content>
+</ion-view>

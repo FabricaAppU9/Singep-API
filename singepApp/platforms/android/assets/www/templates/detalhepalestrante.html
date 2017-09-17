@@ -1,0 +1,49 @@
+<ion-view view-title="Detalhe">
+  
+
+<ion-nav-bar class="bar-dark">
+    
+
+      <ion-nav-back-button>
+  </ion-nav-back-button>
+        
+        
+
+    </ion-nav-bar>
+
+
+
+
+  <ion-content>
+ 	<div class="list list-inset">
+<div class="div-detalhe-artigo">
+        <div class="col-sm-offset-3 col-sm-9 maincontent">
+            <div class="alert alert-info" role="alert">
+                <div class="imgpalestrantewrapperdetalhe">
+                            <img src="http://singep.esy.es/api/fotos/{{detalhePalestrante.foto}}"/>
+                </div>
+                <div class="nomePalestrante"><strong> {{detalhePalestrante.nome}}</strong></div>
+                <div class="palestrantedetalheinfo">
+                {{detalhePalestrante.filiacao}}<br>
+                {{detalhePalestrante.cidade}}-{{detalhePalestrante.estado}}<br>
+                <strong><a href="mailto:{{detalhePalestrante.email}}?subject=Contato%20Singep">{{detalhePalestrante.email}}</a></strong>
+                </div>
+                </div>
+                </div>
+                <br>  
+		<h5 class="text-center"><strong>{{detalheArtigo.titulo}}</strong></h5>
+        </div>
+        <div class="col-sm-offset-3 col-sm-9 maincontent div-resume">
+            
+            <h3>Currículo</h3>
+            <p class="text-justify to-expand open">{{detalhePalestrante.curriculo}}</p>
+            <br>
+            <div class="text-left centralizar" ng-show="showRegisterButton">
+                                    <a class="btn btn-primary" ng-click="setAgendar({{artigo.codigo_artigo}})" ng-show="showRegisterButton">Registrar-se</a>
+                                </div>    
+        </div>
+    </div>
+	</div>
+      		</ion-nav-view>
+  </ion-content>
+</ion-view>

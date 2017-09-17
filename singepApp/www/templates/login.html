@@ -1,0 +1,31 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-dark">
+    <h1 class="title">SINGEP</h1>
+    <div class="buttons">
+    
+    </div>
+  </ion-header-bar>
+  <ion-content>
+  <div id="divLogo" >
+  <img src="img/logo.png"/>
+   </div> 
+   <div id="divMensagem">
+	<p align="center"> Informe o E-mail e o CPF utilizados no momento da inscrição.</p>
+   </di>
+	<form ng-submit="efetuarLogin(formLogin)" id="formLogin" name="formLogin">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">E-mail</span>
+          <input type="email" name="email" ng-model="loginData.email"/>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">CPF</span>
+          <input type="number" name="cpf" ng-model="loginData.cpf"/>
+        </label>
+        <label class="item" id="btnEntrar">
+          <button class="button button-block button-dark" type="submit">Entrar</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

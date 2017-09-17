@@ -1,0 +1,75 @@
+<ion-view view-title="Pesquisa por área e tema">
+  
+<ion-nav-bar class="bar-dark">
+    
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+        
+        
+
+    </ion-nav-bar>
+
+  <ion-content>
+
+<article class="col-sm-offset-2 col-sm-8 maincontent">
+            
+            <p class="text-justify">
+                Selecione a área de interesse e os temas correspondentes entre as opções abaixo. Opcionalmente, 
+                selecione uma data para minimizar a exibição nos resultados.
+            </p>
+            <form  ng-submit="efetuarBuscaAreaTema()" id="formAreaTema">
+            <ion-item>
+                <div class="form-group top-margin">
+
+                    <label for="area">Área</label>
+                    <select class="form-control" id="area" name="area" ng-model="data.area" ng-change="updateTema()" ng-options="area as area.descricao for area in areas track by area.codigo_area">
+                        <option value="" disabled="disabled" selected="selected">Selecione uma área</option>
+                        <option ng-repeat="area in areas" value="{{area.codigo_area}}">{{area.descricao}}</option>
+                    </select>
+                </div>                        
+                </ion-item>
+                <ion-item>
+                <div class="form-group top-margin">
+                    <label for="tema">Tema</label>
+                    <select class="form-control bigselect" id="tema" name="tema" ng-model="data.tema" ng-options="tema as tema.descricao for tema in temas track by tema.codigo_tema">
+                    	<option ng-repeat="tema in temas" value="{{tema.codigo_tema}}">{{tema.descricao}}</option>
+                    </select>
+                </div>                        
+                </ion-item>
+                <ion-item>
+                <div class="form-group top-margin">
+                    <label for="horarios">Selecione o dia (opcional)</label></br>
+                    <select class="form-control" id="data" name="data" ng-model="data.data" ng-change="updateHorarios()"
+                    ng-options="data as data.dia_semana for data in datas track by data.codigo_data">
+                        
+                        <option  ng-repeat="data in datas" value="{{data.codigo_data}}">{{data.dia_semana}} - {{data.data}}</option>
+                        
+                        </select>
+                </div> 
+                </ion-item>
+                <ion-item>
+                <div class="form-group top-margin">
+                    <label for="horarios">Selecione o horário (opcional)</label></br>
+                    <select class="form-control" id="horarios" name="data_horario" ng-model="data.horario" ng-options="horario as horario.horario for horario in horarios track by horario.codigo_horario">
+                        <option  value="null">Todos</option>
+                        <option ng-repeat="horario in horarios" value="{{horario.codigo_horario}}">{{horario.horario}}</option>
+                            
+                    </select>
+                </div> 
+                </ion-item>
+                <ion-item>
+                <br>                        
+                <div class="text-right">
+                    <input class="btn btn-action text-center" type="submit" value="Pesquisar">
+                </div>
+                </ion-item>
+                
+            </form>
+        </article>
+
+
+  </ion-content>
+</ion-view>

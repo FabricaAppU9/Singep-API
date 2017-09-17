@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ionicframework.singep642487" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>SINGEP</name>
+    <description>
+        Simpósio Internacional de Gestão de Projetos, Inovação e Sustentabilidade
+    </description>
+    <author email="jocasiso@gmail.com" href="http://www.uninove.br/">
+      Edson Melo /  Guilherme Fujita / João Souza /
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="mailto:*" />
+    <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <preference name="WindowsToastCapable" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="FadeSplashScreenDuration" value="800" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+</widget>

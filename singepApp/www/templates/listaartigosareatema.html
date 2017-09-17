@@ -1,0 +1,64 @@
+<ion-view view-title="Artigos">
+  
+
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-back-button>
+  </ion-nav-back-button>
+  </ion-nav-bar>
+
+
+  <ion-content>
+ 	<div class="list list-inset">
+			<div class="itemArtigo" ng-repeat="artigo in listaArtigos">
+			 	
+
+			<div id="body" class="container div-lista-artigo secondary">
+
+    
+    
+                <div class="div-artigo row">
+
+                <div class="col-sm-offset-3 col-sm-9 maincontent div-resume">
+                    <h5><strong>{{artigo.titulo}}</strong></h5>
+
+                    <div class="div-info"> 
+                    <div>
+                        <div class="info-to-left info-border">
+                            <span>Data</span>
+                            <strong>{{artigo.data}}</strong>
+                        </div>
+                        <div class="info-border">
+                            <span>Horário</span>
+                            <strong class="small">{{artigo.horario}}</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-to-left">
+                            <span>Sala</span>
+                            <strong>{{artigo.local}}</strong>
+                        </div>
+                        <div>
+                            <span>Tipo</span> 
+                            <strong>{{artigo.tipo_trabalho}}</strong> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col col-sm-12 text-right">
+                        <div class="btn-actions" role="group">  
+
+         <a class="btn btn-info" href="#/app/detalheartigo/{{artigo.codigo_artigo}}">Detalhes</a>
+         <a class="btn btn-primary" ng-click="setAgendar({{artigo.codigo_artigo}})">Agendar</a>
+                                                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+</div>
+
+
+
+             </div>
+			</div>
+      		</ion-nav-view>
+  </ion-content>
+</ion-view>

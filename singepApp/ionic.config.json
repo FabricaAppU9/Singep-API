@@ -1,0 +1,9 @@
+{
+  "name": "singep",
+  "app_id": "",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": []
+}

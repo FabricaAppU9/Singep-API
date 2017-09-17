@@ -1,0 +1,68 @@
+<ion-view view-title="Detalhe">
+  
+
+<ion-nav-bar class="bar-dark">
+    
+
+      <ion-nav-back-button>
+  </ion-nav-back-button>
+       
+        
+
+    </ion-nav-bar>
+
+
+
+  <ion-content>
+ 	<div class="list list-inset">
+<div class="div-detalhe-artigo">
+        <div class="col-sm-offset-3 col-sm-9 maincontent">
+            <div class="alert alert-info" role="alert">
+                <strong>Área:</strong> {{detalheArtigo.area}}<br><strong>Tema:</strong>{{detalheArtigo.tema}}</div>
+                <div ng-repeat="autor in detalheArtigo.autores">
+                    <h5>{{autor.nome}}</h5>
+                    <span class="instituicao">{{autor.filiacao}}</span>
+                </div>
+                <br>  
+		<h5 class="text-center"><strong>{{detalheArtigo.titulo}}</strong></h5>
+        </div>
+        <div class="col-sm-offset-3 col-sm-9 maincontent div-resume">
+            <div class="col col-sm-3 div-info div-lista-artigo"> 
+                <div class="info-to-left info-border">
+                    <span>Data</span>
+                    <strong>{{detalheArtigo.data}}</strong>
+                </div>
+                <div class="info-border">
+                    <span>Horário</span>
+                    <strong>{{detalheArtigo.horario}}</strong>
+                </div>
+                <div class="info-to-left">
+                    <span>Sala</span>
+                    <strong>{{detalheArtigo.local}}</strong>
+                </div>
+                <div>
+                    <span>Tipo</span> 
+                    <strong>{{detalheArtigo.tipo_trabalho}}</strong> 
+                </div>
+            </div>
+            <h3>Resumo (Abstract)</h3>
+            <p class="text-justify to-expand open">{{detalheArtigo.resumo}}</p>
+            <br>
+
+            <br>
+            <div class="text-left centralizar" >
+                <a class="btn btn-primary" ng-click="getArtigoPdf(detalheArtigo.codigo_artigo)">Download Artigo</a>
+            <br>
+            <br>
+                                    <a class="btn btn-primary" ng-click="setAgendar(detalheArtigo.codigo_artigo)" ng-show="showRegisterButton">Agendar</a>
+                               
+                                    <a class="btn btn-primary" ng-click="setRemover(detalheArtigo.codigo_artigo)" ng-show="showCancelButton">Cancelar Agendamento</a>
+                                </div> 
+
+                                  
+        </div>
+    </div>
+	</div>
+      		</ion-nav-view>
+  </ion-content>
+</ion-view>
