@@ -22,19 +22,19 @@ define('DB_CHARSET', 'utf8');
 */
 
 // Nome do host da base de dados
-define('HOSTNAME', 'localhost:3306');
+define('HOSTNAME', 'br-cdbr-azure-south-b.cloudapp.net');
 
 // Banco de dados
 define('DB_TYPE', 'mysql');
 
 // Nome do DB
-define('DB_NAME', 'u930453410_api');
+define('DB_NAME', 'singep');
 
 // Usuário do DB - modifique para seu usuário do banco
-define('DB_USER', 'root');
+define('DB_USER', 'bf8cb602aea716');
 
 // Senha do DB - modifique para sua senha do banco
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '54be393a');
 
 // Charset da conexão PDO
 define('DB_CHARSET', 'utf8');

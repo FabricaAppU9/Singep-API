@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost:3306',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'u930453410_api',
+	'hostname' => 'br-cdbr-azure-south-b.cloudapp.net',
+	'username' => 'bf8cb602aea716',
+	'password' => '54be393a',
+	'database' => 'singep',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
