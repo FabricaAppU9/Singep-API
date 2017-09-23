@@ -303,7 +303,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     $.ajax({
 
-                        url: 'http://singep.esy.es/api/notificacao/setEnviar',
+                        url: 'https://singep.azurewebsites.net/api/notificacao/setEnviar',
+
+                        //url: 'http://singep.esy.es/api/notificacao/setEnviar',
                         type: 'PUT',
                         data : JSON.stringify({ 'token' : token,
                                  'texto' : texto,

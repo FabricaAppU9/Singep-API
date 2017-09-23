@@ -210,7 +210,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     $('#speakers-list-container-third')
                 ];
 
-            $.post( 'http://singep.esy.es/api/palestrante/getAll', {token: token},
+
+            $.post( 'https://singep.azurewebsites.net/api/palestrante/getAll', {token: token},
+            //$.post( 'http://singep.esy.es/api/palestrante/getAll', {token: token},
 
                 function( rows ) {
 

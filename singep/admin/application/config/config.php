@@ -23,8 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+
+//$config['base_url'] ='https://singep.azurewebsites.net/admin/';
+
 //$config['base_url'] ='http://singep.esy.es/admin/';
-$config['base_url'] ='http://localhost:8080/admin/';
+$config['base_url'] ='http://localhost:8080/singep/admin/';
 //$config['base_url'] = "http://".$_SERVER['HTTP_HOST'];
 
 /*

@@ -128,7 +128,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         e.preventDefault();
 
-        $.post( 'http://singep.esy.es/api/api/getLogin',
+        $.post( $config['base_url']+'/api/api/getLogin',
 
                 {login: true, email: $('#email').val(), documento: $('#documento').val()},
 
