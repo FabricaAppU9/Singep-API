@@ -211,7 +211,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 ];
 
 
-            $.post( 'https://singep.azurewebsites.net/api/palestrante/getAll', {token: token},
+            $.post( 'https://singep.fabricaappu9.com.br/singep/api/api/palestrante/getAll', {token: token},
+            //$.post( 'https://singep.azurewebsites.net/api/palestrante/getAll', {token: token},
             //$.post( 'http://singep.esy.es/api/palestrante/getAll', {token: token},
 
                 function( rows ) {

@@ -3,7 +3,7 @@ define({
   "version": "0.1.0",
   "description": "Documentação do Projeto",
   "title": "SINGEP.API",
-  "url": "https://singep.azurewebsites.net", 
+  "url": "https://singep.fabricaappu9.com.br/singep", 
   "generator": {
     "name": "apidoc",
     "time": "2016-10-29T13:30:48.783Z",

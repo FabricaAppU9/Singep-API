@@ -22,19 +22,19 @@ define('DB_CHARSET', 'utf8');
 */
 
 // Nome do host da base de dados
-define('HOSTNAME', 'br-cdbr-azure-south-b.cloudapp.net');
+define('HOSTNAME', 'robb0161.publiccloud.com.br');
 
 // Banco de dados
 define('DB_TYPE', 'mysql');
 
 // Nome do DB
-define('DB_NAME', 'singep');
+define('DB_NAME', 'fabricaapp_ra');
 
 // Usuário do DB - modifique para seu usuário do banco
-define('DB_USER', 'bf8cb602aea716');
+define('DB_USER', 'fabri_ra');
 
 // Senha do DB - modifique para sua senha do banco
-define('DB_PASSWORD', '54be393a');
+define('DB_PASSWORD', 'Yocf968!');
 
 // Charset da conexão PDO
 define('DB_CHARSET', 'utf8');

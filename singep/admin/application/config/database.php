@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'br-cdbr-azure-south-b.cloudapp.net',
-	'username' => 'bf8cb602aea716',
-	'password' => '54be393a',
-	'database' => 'singep',
+	'hostname' => 'robb0161.publiccloud.com.br',
+	'username' => 'fabri_ra',
+	'password' => 'Yocf968!',
+	'database' => 'fabricaapp_ra',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

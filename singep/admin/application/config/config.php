@@ -24,10 +24,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-//$config['base_url'] ='https://singep.azurewebsites.net/admin/';
-
+//$config['base_url'] ='https://2singep.azurewebsites.net/admin/';
+$config['base_url'] ='http://singep.fabricaappu9.com.br/singep/admin/'
 //$config['base_url'] ='http://singep.esy.es/admin/';
-$config['base_url'] ='http://localhost:8080/singep/admin/';
+//$config['base_url'] ='http://localhost:8080/singep/admin/';
 //$config['base_url'] = "http://".$_SERVER['HTTP_HOST'];
 
 /*
